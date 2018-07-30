@@ -1,0 +1,30 @@
+{
+    "name": "utility",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "npm run compile && npm run babel && npm run copy",
+        "babel": "babel dist --out-dir dist",
+        "compile": "tsc",
+        "copy": "copyfiles -f src/*.css dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:JulioYu/utility.git"
+    },
+    "author": "julio",
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {
+        "@types/node": "10.5.1",
+        "@types/react": "16.4.6",
+        "babel-cli": "6.26.0",
+        "babel-plugin-transform-class-properties": "6.24.1",
+        "babel-plugin-transform-object-rest-spread": "6.26.0",
+        "babel-preset-es2015": "6.24.1",
+        "babel-preset-react": "6.24.1",
+        "copyfiles": "2.0.0",
+        "typescript": "2.9.2"
+    }
+}
